@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller animationDuration="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Spain_Clock_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Argentina" id="dX4-10-MYG" userLabel="lbl_Argentina"/>
+                        <table alignment="left" id="Eo5-ID-bhE"/>
+                        <dateLabel alignment="center" verticalAlignment="bottom" textAlignment="center" format="HH:mm" id="2x4-1t-uzP" userLabel="date_Argentina">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </dateLabel>
+                        <dateLabel alignment="center" textAlignment="center" format="HH:mm" id="QBK-kE-bdL" userLabel="date_Spain">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </dateLabel>
+                        <separator alignment="center" verticalAlignment="center" id="NBQ-GE-1RL"/>
+                        <label alignment="center" verticalAlignment="bottom" text="España" id="cpd-yB-Pgk"/>
+                    </items>
+                    <connections>
+                        <outlet property="date_Argentina" destination="2x4-1t-uzP" id="UD9-2i-TFa"/>
+                        <outlet property="date_Spain" destination="QBK-kE-bdL" id="tuJ-S3-sau"/>
+                        <outlet property="lbl_Argentina" destination="dX4-10-MYG" id="nUE-KT-Yg8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="144" y="141"/>
+        </scene>
+    </scenes>
+</document>
